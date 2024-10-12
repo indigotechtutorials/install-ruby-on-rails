@@ -1,0 +1,36 @@
+<div class="flex flex-col items-center pt-36 px-8 md:px-4 bg-gradient-to-b from-indigo-600 to-blue-200 min-h-screen"> 
+  <h1 class="text-3xl md:text-7xl text-blue-300 font-lato font-semibold flex flex-col items-center"> 
+    <span> Installing </span> 
+    <%= image_tag "rubyonrails.png", class: "h-36 object-cover" %> 
+    <span>has never been easier </span> 
+  </h1>
+  <p class="text-lg text-gray-200 mt-4"> We compile installation guides, common issues, and a forum for basic setup issues </p>
+
+  <div class="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between mt-16 gap-4">
+    <div class="max-w-lg w-full p-4 bg-gray-200/20 rounded-lg">
+      <p class="text-xl text-gray-100 font-lato text-center"> Setup Guides </p>
+
+      <div class="mt-4 flex flex-col gap-2"> 
+        <p class="text-xl text-gray-100"> Gorails | Youtuber </p>
+        <%= link_to "MacOS Setup guide", "https://gorails.com/setup/macos", target: "_new", class: "text-gray-100 text-xl underline" %>
+        <%= link_to "Windows Setup guide", "https://gorails.com/setup/windows", target: "_new", class: "text-gray-100 text-xl underline" %>
+        <%= link_to "Ubuntu Setup guide", "https://gorails.com/setup/ubuntu", target: "_new", class: "text-gray-100 text-xl underline" %>
+      </div>
+
+
+      <div class="mt-4 flex flex-col gap-2"> 
+        <p class="text-xl text-gray-100"> Official Rails Website </p>
+        <%= link_to "Ruby on Rails installation guide", "https://www.ruby-lang.org/en/documentation/installation/", target: "_new", class: "text-gray-100 text-xl underline" %>
+      </div>      
+    </div>
+
+    <div class="max-w-lg w-full p-4 bg-gray-200/20 rounded-lg">
+      <p class="text-xl text-gray-100 font-lato text-center"> Discords </p>
+      <div class="mt-4 flex flex-col gap-2"> 
+        <%= link_to "Official Ruby on Rails Discord", "https://discord.com/invite/d8N68BCw49", target: "_new", class: "text-gray-100 text-xl underline" %>
+        <%= link_to "Hotwire Discord | Default Rails Frontend", "https://discord.com/invite/GqWeSyjjvn", target: "_new", class: "text-gray-100 text-xl underline" %>
+        <%= link_to "Indigo Tech Tutorials Discord | Youtuber", "https://discord.gg/7XWRTKUnQp", target: "_new", class: "text-gray-100 text-xl underline" %>
+      </div>
+    </div>
+  </div>
+</div>
